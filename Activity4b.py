@@ -1,4 +1,5 @@
 import math
+import time
 
 def main():
     print(display_title())
