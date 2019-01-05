@@ -6,12 +6,13 @@ def main():
 
     sortedNames = sortList(names)
     sortedString = str(sortedNames)
-    print("Initial List of Names:\n" + sortedString)
+    print("\nInitial List of Names: ")
+    print(sortedNames)
 
     final = removeDuplicates(sortedNames)
 
     finalString = str(final)
-    print("List of unique names after running through the de-duplicator program:\n" + finalString)
+    print("\nList of unique names after running through the de-duplicator program:\n" + finalString)
 
 
 def getTitle():
@@ -20,8 +21,8 @@ def getTitle():
 #comment
 def sortList(names):
 
-    sortedNames = names.sort()
-    return sortedNames
+    names.sort()
+    return names
 
 
 def removeDuplicates(names):
